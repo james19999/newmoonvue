@@ -1,27 +1,28 @@
 <template>
-     <div class="min-w-screen min-h-screen  flex items-center p-5 lg:p-10 overflow-hidden relative">
-    <div class="w-full max-w-6xl rounded bg-white shadow p-10 lg:p-20 mx-auto text-gray-800 relative md:text-left">
-        <div class="md:flex items-center -mx-10">
-            <div class="w-full md:w-1/2 px-10 mb-10 md:mb-0">
+     <div class="relative flex items-center min-h-screen p-5 overflow-hidden min-w-screen lg:p-10">
+    <div class="relative w-full max-w-6xl p-10 mx-auto text-gray-800 bg-white rounded shadow lg:p-20 md:text-left">
+        <div class="items-center -mx-10 md:flex">
+            <div class="w-full mb-10 lg:px-10 md:px-0 sm:px-0 md:mb-0">
                 <div class="relative">
-                    <img :src=" `${imageUrl}` + useProductStor.products.img" class="w-full relative z-10 rounded-lg"  alt="">
-                    <div class="border-2 border-gray-800 absolute top-10 bottom-10 left-10 right-10 z-0"></div>
+                    <img :src=" `${imageUrl}` + useProductStor.products.img" class="relative z-10 w-full rounded-lg "  alt="">
+                    <div class="absolute z-0 border-2 border-gray-800 top-10 bottom-10 left-10 right-10"></div>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 px-10">
+            <div class="w-full px-10 md:w-1/2">
                 <div class="mb-10">
-                    <h1 class="font-bold uppercase text-2xl mb-5"> {{ useProductStor.products.name }}<br>Waterproof Jacket</h1>
-                    <p class="text-sm">{{ useProductStor.products.description }} <a href="#" class="opacity-50 text-gray-900 hover:opacity-100 inline-block text-xs leading-none border-b border-gray-900">MORE <i class="mdi mdi-arrow-right"></i></a></p>
+                    <h1 class="mb-5 text-2xl font-bold uppercase"> {{ useProductStor.products.name }}<br></h1>
+                    <p class="text-sm">{{ useProductStor.products.description }} <a href="#" class="inline-block text-xs leading-none text-gray-900 border-b border-gray-900 opacity-50 hover:opacity-100"> <i class="mdi mdi-arrow-right"></i></a></p>
                 </div>
                 <div>
-                    <!-- <div class="inline-block align-bottom mr-5">
+                    <!-- <div class="inline-block mr-5 align-bottom">
                         <span class="text-2xl leading-none align-baseline">$</span>
-                        <span class="font-bold text-5xl leading-none align-baseline">59</span>
+                        <span class="text-5xl font-bold leading-none align-baseline">59</span>
                         <span class="text-2xl leading-none align-baseline">.99</span>
                     </div> -->
                     <div class="inline-block align-bottom">
-                        <button class="bg-yellow-300 opacity-75 hover:opacity-100 text-yellow-900 hover:text-gray-900 rounded-full px-10 py-2 font-semibold"><i class="mdi mdi-cart -ml-2 mr-2"></i> BUY NOW</button>
+                        <button  @click.prevent="useProductStor.AddProductToCard(useProductStor.products.id,useProductStor.products.name,useProductStor.products.description,useProductStor.products.img)" class="px-10 py-2 font-semibold text-white bg-[#00008b]  rounded-full opacity-75 hover:opacity-100 hover:text-white"><i class="mr-2 -ml-2 mdi mdi-cart"></i>Ajouter au devis</button>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -30,9 +31,7 @@
  <Footer/>
 </template>
 <script setup>
-   onMounted(() => {
-    useProductStor.ShowProduct(parseInt(props.id));
-   })
+
    import Footer  from '../components/Footer.vue'
 import { onMounted} from 'vue'
    import { useProductStore } from '@/stores/products';
@@ -42,7 +41,9 @@ import { onMounted} from 'vue'
  const props=  defineProps({
       id:{type:String,required:true},
    });
-
+   onMounted(() => {
+    useProductStor.ShowProduct(parseInt(props.id));
+   })
 
   
 </script>

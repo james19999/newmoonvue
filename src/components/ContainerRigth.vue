@@ -14,23 +14,29 @@
     >
       <swiper-slide
         >
-        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="https://s3u.tmimgcdn.com/u28753765/df732153da92da0385316bfef7d0489e.jpg" alt="" srcset="">
+        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="../assets/B2.jpg" alt="" srcset="">
         
           </swiper-slide
       ><swiper-slide
         >
-        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="https://s3u.tmimgcdn.com/u28753765/df732153da92da0385316bfef7d0489e.jpg" alt="" srcset="">
+        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="../assets/B1.jpg" alt="" srcset="">
 
         </swiper-slide
       ><swiper-slide
         >
-        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="https://s3u.tmimgcdn.com/u28753765/df732153da92da0385316bfef7d0489e.jpg" alt="" srcset="">
+        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="../assets/B3.jpg" alt="" srcset="">
 
           
           </swiper-slide
-      ><swiper-slide
+      >
+      <swiper-slide
         >
-        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="https://s3u.tmimgcdn.com/u28753765/df732153da92da0385316bfef7d0489e.jpg" alt="" srcset="">
+        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="../assets/A1.jpg" alt="" srcset="">
+        
+    </swiper-slide>
+      <swiper-slide
+        >
+        <img class="object-cover w-full h-full transition-transform transform rounded-lg hover:scale-105" src="../assets/B4.jpg" alt="" srcset="">
         
     </swiper-slide>
     </swiper>

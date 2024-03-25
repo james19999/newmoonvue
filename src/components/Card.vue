@@ -1,14 +1,14 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
- <div class="container mx-auto  py-1    ">
-    <ul class="divide-y divide-gray-200 p-3 ">
+ <div class="container py-1 mx-auto ">
+    <ul class="p-3 divide-y divide-gray-200 ">
         <!-- Article 1 -->
-        <li class="py-4 flex items-center justify-between">
+        <li class="flex items-center justify-between py-4">
             <div class="flex items-center">
                 <img
                         :src=" `${imageUrl}` + items.img"
                         alt="ui/ux review check"
-                        class="w-full h-11 mr-2  shadow-md rounded-lg"
+                        class="w-12 mr-2 rounded-lg shadow-md h-11"
                     />
                 
                 <div class="flex flex-col">
@@ -17,13 +17,13 @@
                 </div>
             </div>
             <div class="flex items-center">
-                <button @click.prevent="useProductStor.Decrement(items.id)" class="text-gray-500 mr-2 focus:outline-none">
+                <button @click.prevent="useProductStor.Decrement(items.id)" class="mr-2 text-gray-500 focus:outline-none">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                     </svg>
                 </button>
-                <span class="text-gray-700 mx-2">{{ items.qty }}</span>
-                <button @click.prevent="useProductStor.Increment(items.id)" class="text-gray-500 mr-2 focus:outline-none">
+                <span class="mx-2 text-gray-700">{{ items.qty }}</span>
+                <button @click.prevent="useProductStor.Increment(items.id)" class="mr-2 text-gray-500 focus:outline-none">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20l8-8-8-8"></path>
@@ -53,6 +53,9 @@ defineProps({
         type:Object,
         required:true
      }
-})
+});
+
+
+    
 
 </script>

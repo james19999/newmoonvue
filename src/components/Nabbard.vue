@@ -3,25 +3,25 @@
    
 
    <header >
-        <nav class="  bg-gray-800">
+        <nav class="bg-[#00008b]">
             <div class="px-2 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="flex items-center justify-between h-16">
                     <div class="flex items-center">
                         <div class="flex-shrink-0">
-                            <img class="w-8 h-8" src="../assets/A1.jpg" alt="Logo">
+                            <img class="w-20 h-10" src="../assets/B.jpeg" alt="Logo">
                         </div>
                         <div class="hidden md:block">
                             <div class="flex items-baseline ml-10 space-x-4">
-                                <RouterLink to="/" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Accueil</RouterLink>
-                                <RouterLink to="About" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">À propos</RouterLink>
-                                <RouterLink to="Devis" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Devis</RouterLink>
-                                <RouterLink to="Contact" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact</RouterLink>
+                                <RouterLink to="/" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-[#FF3131] hover:text-white">Accueil</RouterLink>
+                                <RouterLink to="About" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-[#FF3131] hover:text-white">À propos</RouterLink>
+                                <RouterLink to="Devis" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-[#FF3131] hover:text-white">Devis</RouterLink>
+                                <RouterLink to="Contact" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-[#FF3131] hover:text-white">Contact</RouterLink>
                             </div>
                         </div>
                         
                     </div>
                     <div class="flex -mr-2 md:hidden">
-                        <button type="button"  @click="toggleMobileMenu" class="inline-flex items-center justify-center p-2 text-gray-400 bg-gray-800 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <button type="button"  @click="toggleMobileMenu" class="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
                             <span class="sr-only">Ouvrir le menu</span>
                             <!-- Icon when menu is closed. -->
                             <!-- Heroicon name: outline/menu -->
@@ -41,10 +41,10 @@
             <!-- Mobile menu, show/hide based on menu state. -->
             <div class="md:hidden" v-show="isMobileMenuOpen" @click="toggleMobileMenu" id="mobile-menu">
                 <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                    <RouterLink to="/" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Accueil</RouterLink>
-                    <RouterLink to="About" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">À propos</RouterLink>
-                    <RouterLink to="Devis" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Devis</RouterLink>
-                    <RouterLink to="Contact" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-gray-700 hover:text-white">Contact</RouterLink>
+                    <RouterLink to="/" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-white hover:text-white">Accueil</RouterLink>
+                    <RouterLink to="About" class="px-3 py-2 text-sm font-medium text-gray-300 rounded-md hover:bg-white hover:text-white">À propos</RouterLink>
+                    <RouterLink to="Devis" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-white hover:text-white">Devis</RouterLink>
+                    <RouterLink to="Contact" class="block px-3 py-2 text-base font-medium text-gray-300 rounded-md hover:bg-white hover:text-white">Contact</RouterLink>
                 </div>
             </div>
         </nav>

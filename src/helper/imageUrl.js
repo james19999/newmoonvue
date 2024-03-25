@@ -1,3 +1,3 @@
-const imageUrl  = 'http://192.168.1.5:8000/uploads/';
+const imageUrl  = 'https://apinewmmon.djinefawisdom.com/uploads/';
 export default imageUrl;
 

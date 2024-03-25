@@ -1,3 +1,3 @@
-const baseURL  = 'http://192.168.1.5:8000/api';
+const baseURL  = 'https://apinewmmon.djinefawisdom.com/api';
 export default baseURL;
 

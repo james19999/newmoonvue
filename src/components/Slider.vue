@@ -13,10 +13,19 @@
     :modules="modules"
     class="mySwiper"
   >
+
     <swiper-slide>
       <img
-        class="object-cover w-full h-full rounded-md transition-transform transform hover:scale-105"
-        src="../assets/ba.jpeg"
+        class="object-cover w-full h-full transition-transform transform rounded-md hover:scale-105"
+        src="../assets/bc.jpeg"
+        alt=""
+        srcset=""
+      />
+    </swiper-slide>
+    <swiper-slide>
+      <img
+        class="object-cover w-full h-full transition-transform transform rounded-md hover:scale-105"
+        src="../assets/D.jpeg"
         alt=""
         srcset=""
       />
